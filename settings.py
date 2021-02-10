@@ -7,6 +7,12 @@ SESSION_CONFIGS = [
        num_demo_participants=2,
        app_sequence=['mi_dilema_del_prisionero']
     ),
+dict(
+       name='mi_dilema_del_prisionero_re',
+       display_name="Mi Dilema del Prisionero 2",
+       num_demo_participants=2,
+       app_sequence=['mi_dilema_del_prisionero_re']
+    ),
 ]
 
 # if you set a property in SESSION_CONFIG_DEFAULTS, it will be inherited by all configs

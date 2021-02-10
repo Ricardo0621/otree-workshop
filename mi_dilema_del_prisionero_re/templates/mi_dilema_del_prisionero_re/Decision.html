@@ -1,0 +1,33 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+    Su decisión
+{% endblock %}
+
+{% block content %}
+<table class='table table-bordered'>
+        <tr>
+            <th colspan=2 rowspan=2></th>
+            <th colspan=2>El otro participante</th>
+        </tr>
+        <tr>
+            <th>Coopera</th>
+            <th>Traiciona</th>
+        </tr>
+        <tr>
+            <th rowspan=2><b>Usted</b></th>
+            <th>Coopera</th>
+            <td>{{ Constants.pago_ambos_cooperan }}, {{ Constants.pago_ambos_cooperan }}</td>
+            <td>{{Constants.pago_diferente_coopera}}, {{ Constants.pago_diferente_traiciona }}</td>
+        </tr>
+        <tr>
+            <th>Traiciona</th>
+            <td>{{ Constants.pago_diferente_traiciona }}, {{Constants.pago_diferente_coopera}}</td>
+            <td>{{ Constants.pago_ambos_traicionan }}, {{ Constants.pago_ambos_traicionan }}</td>
+        </tr>
+</table>
+    {% formfields %}
+    {% next_button %}
+
+{% endblock %}

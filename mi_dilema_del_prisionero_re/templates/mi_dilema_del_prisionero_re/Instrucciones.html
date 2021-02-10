@@ -1,0 +1,20 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+    Instrucciones
+{% endblock %}
+
+{% block content %}
+    La policía arresta a dos sospechosos. No hay pruebas suficientes para condenarlos y, 
+    tras haberlos separado, los visita a cada uno y les ofrece el mismo trato. 
+    Si ambos cooperan: Ambos sirven un año. 
+    Si ambos se traicionan: Ambos sirven dos años. 
+    Si A coopera y B traiciona: A cumple 3 años y B sale linebreaks
+    Si A traiciona y B Coopera: A sale libre y B cumple 3 años
+    {% formfields%}
+
+    {% next_button %}
+{% endblock %}
+
+
